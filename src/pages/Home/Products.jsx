@@ -41,6 +41,31 @@ const Products = () => {
     selectedCategory("all");
   };
 
+  // sorting function
+
+  const handleSortChange = (option) => {
+    setSortOption(option);
+    // logic for the sorting
+    let sortedItems = [...filteredItems];
+    switch (option) {
+      case "A-Z":
+        sortedItems.sort((a, b) => a.title.localeCompare(b.title));
+        break;
+      case "Z-A":
+        sortedItems.sort((a, b) => b.title.localeCompare(a.title));
+        break;
+      case "low-to-high":
+        sortedItems.sort((a, b) => a.price - b.price);
+        break;
+      case "high-to-low":
+        sortedItems.sort((a, b) => b.price - a.price);
+        break;
+      default:
+        break;
+    }
+    setfilteredItems(sortedItems);
+  };
+
   return (
     <div className=" mx-auto container  max-w-screen-2xl xl:px-28 px-4 mb-12 ">
       <h2 className="title">Or subscribe to the newsletter</h2>
@@ -77,13 +102,6 @@ const Products = () => {
             </button>
             <button
               onClick={() => {
-                filterItems("Bag");
-              }}
-            >
-              Bag
-            </button>
-            <button
-              onClick={() => {
                 filterItems("Shoe");
               }}
             >
@@ -104,7 +122,9 @@ const Products = () => {
             </div>
             <select
               name=""
-              id=""
+              onChange={(e) => handleSortChange(e.target.value)}
+              id="sort"
+              value={sortOption}
               className="bg-black text-white px-2 py-1 rounded-sm"
             >
               <option value="default">Default</option>
