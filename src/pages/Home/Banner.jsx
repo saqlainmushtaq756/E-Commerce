@@ -1,6 +1,6 @@
 import React from "react";
 import { FaShoppingBag } from "react-icons/fa";
-import bannerImg from "../../../public/images/banner.png";
+import bannerImg from "/images/banner.png";
 
 const Banner = () => {
   return (

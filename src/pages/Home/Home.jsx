@@ -4,6 +4,8 @@ import Category from "./Category";
 import Products from "./Products";
 import Collections from "./Collections";
 import BestSeller from "./BestSeller";
+import NewsLetters from "./NewsLetters";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <Products />
       <Collections />
       <BestSeller />
+      <NewsLetters />
+      <Footer />
     </div>
   );
 };

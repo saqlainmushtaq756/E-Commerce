@@ -7,7 +7,7 @@ const Cards = ({ fiterItem }) => {
     <div className="grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 items-center content-center shadow-sm gap-12">
       {fiterItem.map((item) => (
         <div key={item.id}>
-          <Link to={item.id}>
+          <Link to={`/shop/${item.id}`}>
             <img
               src={item.image}
               alt=""

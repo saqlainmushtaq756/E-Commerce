@@ -31,7 +31,7 @@ const Navbar = () => {
         <FaSearch className="text-Black w-5 h-5 cursor-pointer hidden md:block" />
         {/* logo section  */}
         <a href="/">
-          <img src={logo} alt="logo-img" srcset="" />
+          <img src={logo} alt="logo-img" srcSet="" />
         </a>
         {/* shopping and user acount  */}
         <div className="text-Black text-lg sm:flex items-center gap-4 hidden ">

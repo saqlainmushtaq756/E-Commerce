@@ -15,7 +15,7 @@ const Category = () => {
       <div className="flex flex-wrap items-center justify-around gap-4 py-5">
         {companyLogo.map(({ id, img }) => (
           <div key={id}>
-            <img src={img} alt="img section" srcset="" />
+            <img src={img} alt="img section" srcSet="" />
           </div>
         ))}
       </div>
@@ -31,7 +31,7 @@ const Category = () => {
             <img
               src="/images/grid/card.png"
               alt=""
-              srcset=""
+              srcSet=""
               className="w-full  hover:scale-105 transition-all duration-200"
             />
           </Link>
@@ -43,7 +43,7 @@ const Category = () => {
               <img
                 src="/images/grid/card1.png"
                 alt=""
-                srcset=""
+                srcSet=""
                 className="w-full  hover:scale-105 transition-all duration-200"
               />
             </Link>
@@ -51,7 +51,7 @@ const Category = () => {
               <img
                 src="/images/grid/card2.png"
                 alt=""
-                srcset=""
+                srcSet=""
                 className="w-full  hover:scale-105 transition-all duration-200"
               />
             </Link>
@@ -59,7 +59,7 @@ const Category = () => {
               <img
                 src="/images/grid/card3.png"
                 alt=""
-                srcset=""
+                srcSet=""
                 className="w-full  hover:scale-105 transition-all duration-200"
               />
             </Link>
@@ -67,7 +67,7 @@ const Category = () => {
               <img
                 src="/images/grid/card4.png"
                 alt=""
-                srcset=""
+                srcSet=""
                 className="w-full  hover:scale-105 transition-all duration-200"
               />
             </Link>
